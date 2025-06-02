@@ -76,7 +76,7 @@
 
 .favorites-button.left-button {
   position: absolute;
-  top: 8rem; /* ajusta si es necesario */
+  top: 8rem;
   left: 2rem;
   background-color: #333;
   color: #eee;

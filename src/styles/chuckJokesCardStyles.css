@@ -58,11 +58,11 @@ button.active {
 }
 
 .joke-footer .like.active {
-  color: #4caf50; /* verde */
+  color: #4caf50;
   transform: scale(1.2);
 }
 
 .joke-footer .dislike.active {
-  color: #f44336; /* rojo */
+  color: #f44336;
   transform: scale(1.2);
 }

@@ -4,7 +4,7 @@ import "../../styles/recipesCardsStyle.css";
 
 export default function RecipesCards({ meal }) {
   const [isFavorite, setIsFavorite] = useState(false);
-  const [isLiked, setIsLiked] = useState(null); // null | true
+  const [isLiked, setIsLiked] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {

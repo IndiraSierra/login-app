@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🧠 Dashboard React App – Random APIs Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web construida con React que consume varias APIs públicas para ofrecer contenido divertido, útil y aleatorio. Su objetivo principal es servir como entorno de prácticas para explorar funcionalidades clave de React: rutas protegidas, hooks, manejo de localStorage, fetch asincrónico, manejo de favoritos y diseño modular de componentes, como parte de un proceso evaluativo.  Puedes encontrar que entre una api y otra no haya mucha sintinís semántica o similitud, porque la idea era practicar el consumo de datos de apis usando react, por lo que se adapta la visualización de contenido a las apis públicas/gratuitas encontradas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tecnologías utilizadas
 
-### `npm start`
+- **React** (Create React App)
+- **React Router DOM**
+- **CSS Modules + estilos personalizados**
+- **LocalStorage** para favoritos
+- **APIs públicas sin autenticación**
+- ¡Sin backend! Totalmente frontend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📚 Funcionalidades principales
 
-### `npm test`
+- 🔐 **Autenticación simulada** con rutas protegidas (`PrivateRoute`)
+- 🖼️  Intercambio de fondo de pantalla inicial
+- 🔁 **Consumo de APIs públicas** como:
+  - [Chuck Norris Jokes](https://api.chucknorris.io/)
+  - [TheMealDB Recipes](https://www.themealdb.com/)
+  - [Advice Slip](https://api.adviceslip.com/)
+  - [Bored API](https://www.boredapi.com/)
+- ⭐ **Marcado de favoritos** y persistencia en `localStorage`
+- 👍🏻👎🏻 | ❤️ **Marcado de like/dislike** y persistencia en `localStorage`
+- 📦 Sección `/favorites` con visualización de todos los ítems guardados
+- 🔢 Contador en el botón de favoritos de cada sección.
+- 🎲 Obtención de contenido `Random`
+- 📱 Diseño responsive básico
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧭 Estructura de carpetas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+src/
+├── components/
+│   ├── api/             # Componentes que interactúan con APIs
+│   ├── cards/           # Componentes reutilizables para mostrar ítems
+│   ├── dashboardCards/  # Tarjetas del dashboard
+├── styles/              # Archivos CSS organizados por componente
+├── hooks/               # Hooks personalizados (ej: useFavorites)
+├── utils/               # Funciones utilitarias comunes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+🔧 Instalación y ejecución
+Clona el repositorio:
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Instala dependencias:
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Inicia la aplicación en modo desarrollo:
+npm start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Abre en tu navegador:
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+💡 Nota sobre CORS
+Algunas APIs (como BoredAPI) pueden bloquear solicitudes directas desde localhost. Puedes solucionarlo:
+Añadiendo "proxy": "https://www.boredapi.com" en package.json (en desarrollo)
+Usando un proxy temporal como CORS Anywhere
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📌 Próximas mejoras
+ Soporte completo para temas claro/oscuro
+ Exportación/Importación de favoritos
+ Integración de más APIs sin clave
+ Test unitarios con Jest
 
-### Analyzing the Bundle Size
+🧑‍💻 Autor
+Indira
+Desarrolladora en formación y apasionada por el código limpio,  los proyectos útiles y fan de las ideas absurdas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🌐 Licencia
+Este proyecto se ofrece bajo licencia MIT. Eres libre de usarlo y adaptarlo con fines educativos o personales.

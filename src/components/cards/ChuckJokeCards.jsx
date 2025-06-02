@@ -5,11 +5,8 @@ export default function JokeCard({ joke }) {
     const [copied, setCopied] = useState(false);
     const [liked, setLiked] = useState(null);
     const [isFavorite, setIsFavorite] = useState(false);
-
-    // LocalStorage KEY
     const STORAGE_KEY = "chuckFavorites";
 
-    // Al montar, verifica si está en favoritos
     useEffect(() => {
         const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
         setIsFavorite(saved.some((item) => item.id === joke.id));
