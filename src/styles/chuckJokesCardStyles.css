@@ -1,0 +1,68 @@
+.joke-card {
+  position: relative;
+  background-color: #1f1f1f;
+  color: #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  min-height: 140px;
+}
+
+.joke-card:hover {
+  transform: translateY(-5px);
+}
+
+.joke-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.copied-msg {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 0.75rem;
+  color: #3ee883;
+}
+
+.joke-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+button.like,
+button.dislike {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #888;
+}
+
+button.active {
+  color: #f0f0f0;
+}
+
+
+.joke-footer .like,
+.joke-footer .dislike {
+  transition: all 0.2s ease;
+}
+
+.joke-footer .like.active {
+  color: #4caf50; /* verde */
+  transform: scale(1.2);
+}
+
+.joke-footer .dislike.active {
+  color: #f44336; /* rojo */
+  transform: scale(1.2);
+}

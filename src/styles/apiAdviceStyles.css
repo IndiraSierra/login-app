@@ -1,0 +1,63 @@
+.advice-container {
+  padding: 5rem 2rem 2rem;
+  background-color: #111;
+  min-height: 100vh;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.advice-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f0f3f1;
+}
+
+.advice-content {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  line-height: 1.6;
+}
+
+.advice-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+.advice-button:hover {
+  background-color: #555;
+}
+
+.loading-msg,
+.no-advice {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.favorites-button {
+  position: absolute;
+  top: 8rem; /* ajusta si es necesario */
+  left: 2rem;
+  background-color: #333;
+  color: #eee;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}

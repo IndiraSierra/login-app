@@ -1,0 +1,23 @@
+
+.favorites-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-top: 1rem;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid #888;
+  color: #ccc;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.back-button:hover {
+  transition: all 0.2s ease;
+  background-color: #444;
+}
+

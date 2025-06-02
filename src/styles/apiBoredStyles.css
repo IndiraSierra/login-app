@@ -1,0 +1,60 @@
+.bored-container {
+  padding: 4rem 2rem;
+  background-color: #101010;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.bored-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.activity {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.random-button {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.random-button:hover {
+  background-color: #666;
+}
+.advice-content {
+  min-height: 80px;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.advice-loading {
+  opacity: 0.5;
+  font-style: italic;
+}
