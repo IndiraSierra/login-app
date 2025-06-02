@@ -1,2 +1,2 @@
-# login_app
+# login-app
 React learning project
